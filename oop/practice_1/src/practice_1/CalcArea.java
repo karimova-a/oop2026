@@ -1,0 +1,24 @@
+package practice_1;
+
+import java.util.Scanner;
+
+public class CalcArea {
+	public static void main(String args[]) {
+		Scanner side = new Scanner(System.in);
+		
+		int a ;
+		
+		System.out.print("Enter side of square: ") ;
+		a = side.nextInt() ;
+		
+		int area = a * a ;
+		int perimeter = a * 4 ;
+		double diagonal = a * Math.sqrt(2) ;
+		
+		
+		System.out.print("Area: " + area) ;
+		System.out.print("\nPerimeter: " + perimeter) ;
+		System.out.print("\nDiagonal: " + diagonal) ;
+		
+	}
+}

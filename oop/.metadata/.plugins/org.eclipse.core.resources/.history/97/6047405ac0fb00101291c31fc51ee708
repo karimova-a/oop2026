@@ -1,0 +1,35 @@
+package practice_1;
+
+import java.util.Scanner; ;
+
+public class GradeSystem {
+	public static void main(String args[]) {
+		
+		Scanner gradeInput = new Scanner(System.in);
+		
+		int number ;
+		String grade ;
+		
+		System.out.print("Enter grade number: ") ;
+		number = gradeInput.nextInt() ;
+		
+		
+		
+		if(number >= 95) grade = "A" ;
+		else if(number >= 90 && number < 95) grade = "A-" ;
+		else if(number >= 85 && number < 90) grade = "B+" ;
+		else if(number >= 80 && number < 85) grade = "B" ;
+		else if(number >= 75 && number < 80) grade = "B-" ;
+		else if(number >= 70 && number < 75) grade = "C+" ;
+		else if(number >= 65 && number < 70) grade = "C" ;
+		else if(number >= 60 && number < 65) grade = "C-" ;
+		else if(number >= 55 && number < 60) grade = "D+" ;
+		else if(number >= 50 && number < 55) grade = "D" ;
+		else if(number >= 25 && number < 50) grade = "FX" ;
+		else /*if(number >= 0 && number < 25)*/ grade = "F" ;
+		
+		System.out.print("Your grade: " + grade) ;
+		
+		
+	}
+}

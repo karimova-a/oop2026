@@ -1,0 +1,31 @@
+package practice_1;
+
+import java.util.Scanner ;
+
+public class SavingsAcc {
+	public static void main(String args[]) {
+		Scanner amount = new Scanner(System.in) ;
+		
+		double balance ;
+		double rate ;
+		
+		System.out.print("Enter initial balance: ") ;
+		balance = amount.nextDouble() ;
+		
+		System.out.print("Enter interest: ") ;
+		rate = amount.nextDouble() ;
+		
+		System.out.print("Initial balance: " + balance) ;
+		
+		double interest = balance * rate / 100 ;
+		balance += interest ;
+		
+		System.out.print("\nInterest: " + interest) ;
+		System.out.print("\nFinal balance: " + balance) ;
+		
+		
+		
+		
+	}
+
+}
